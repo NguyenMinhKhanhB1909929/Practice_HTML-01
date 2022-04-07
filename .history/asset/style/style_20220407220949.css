@@ -407,7 +407,7 @@ a {
   }
   .nav__category-opt-more {
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -454,10 +454,7 @@ a {
     width: 46px;
   }
   .nav__icon-wrap {
-    margin-left: 12px;
-  }
-  .nav__icon-wrap::after {
-    display: none;
+    margin-left: 24px;
   }
   /* Container */
   .container {

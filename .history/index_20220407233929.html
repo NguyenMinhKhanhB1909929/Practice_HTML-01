@@ -239,24 +239,14 @@
       });
     }
     {
-      let activeClass = document.querySelectorAll(".nav__category-opt");
+      let activeClass = document.querySelectorAll("nav__category-opt");
+      console.log(123);
       activeClass.forEach((text) => {
         text.onclick = () => {
           activeClass.forEach((t) => {
             t.classList.remove("active-btn");
           });
           text.classList.add("active-btn");
-        };
-      });
-    }
-    {
-      let activeClass = document.querySelectorAll(".nav__icon");
-      activeClass.forEach((text) => {
-        text.onclick = () => {
-          activeClass.forEach((t) => {
-            t.classList.remove("active-icon");
-          });
-          text.classList.add("active-icon");
         };
       });
     }

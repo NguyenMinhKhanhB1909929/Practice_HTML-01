@@ -23,7 +23,7 @@
   display: flex;
 }
 .header__about-text {
-  padding: 24px 32px;
+  margin: 24px 32px;
   display: flex;
   border-right: 1px solid #ccc;
 }

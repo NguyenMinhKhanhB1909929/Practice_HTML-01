@@ -227,38 +227,22 @@
     </div>
   </body>
   <script>
-    {
-      let activeClass = document.querySelectorAll(".header__about-text a");
+    function active(selector, classActiveName) {
+      console.log(selector);
+      console.log(classActiveName);
+      let activeClass = document.querySelectorAll("selector");
+      console.log(activeClass);
       activeClass.forEach((text) => {
         text.onclick = () => {
           activeClass.forEach((t) => {
-            t.classList.remove("active");
+            t.classList.remove("classActiveName");
           });
-          text.classList.add("active");
+          text.classList.add("classActiveName");
         };
       });
     }
-    {
-      let activeClass = document.querySelectorAll(".nav__category-opt");
-      activeClass.forEach((text) => {
-        text.onclick = () => {
-          activeClass.forEach((t) => {
-            t.classList.remove("active-btn");
-          });
-          text.classList.add("active-btn");
-        };
-      });
-    }
-    {
-      let activeClass = document.querySelectorAll(".nav__icon");
-      activeClass.forEach((text) => {
-        text.onclick = () => {
-          activeClass.forEach((t) => {
-            t.classList.remove("active-icon");
-          });
-          text.classList.add("active-icon");
-        };
-      });
-    }
+    active(".header__about-text a", "active");
+    let activeClass = document.querySelectorAll("selector");
+    console.log(activeClass);
   </script>
 </html>

@@ -249,16 +249,5 @@
         };
       });
     }
-    {
-      let activeClass = document.querySelectorAll(".nav__icon");
-      activeClass.forEach((text) => {
-        text.onclick = () => {
-          activeClass.forEach((t) => {
-            t.classList.remove("active-icon");
-          });
-          text.classList.add("active-icon");
-        };
-      });
-    }
   </script>
 </html>

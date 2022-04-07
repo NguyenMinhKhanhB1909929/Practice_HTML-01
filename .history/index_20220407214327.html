@@ -16,10 +16,10 @@
       <div class="header">
         <div class="header__about">
           <div class="header__about-text">
-            <a href="#" class="active">Online store</a>
+            <a href="" class="active">Online store</a>
           </div>
           <div class="header__about-text">
-            <a href="#">Quotes</a>
+            <a href="">Quotes</a>
           </div>
           <div class="header__about-text">
             <img
@@ -27,8 +27,9 @@
               alt=""
               class="header__about-text__img"
             />
-
-            <a href="#">Contact us</a>
+            <p class="m-0">
+              <a href="">Contact us</a>
+            </p>
           </div>
         </div>
         <div class="header__nation">
@@ -52,10 +53,13 @@
       <nav class="nav">
         <div class="nav__category">
           <div class="nav__logo">
-            <a href="#" class="nav__logo-link">inke.</a>
+            <a href="" class="nav__logo-link">inke.</a>
           </div>
 
           <div class="nav__category-opt-group">
+            <div class="nav__category-opt">
+              <i class="fa-solid fa-align-justify"></i>
+            </div>
             <div class="nav__category-opt">
               <p class="nav__category-opt-name">Shop</p>
               <div class="nav__category-opt-icon">
@@ -73,9 +77,6 @@
               <div class="nav__category-opt-icon">
                 <i class="fa-solid fa-chevron-down"></i>
               </div>
-            </div>
-            <div class="nav__category-opt-more">
-              <i class="fa-solid fa-align-justify"></i>
             </div>
           </div>
         </div>
@@ -191,7 +192,7 @@
                     <p class="container__content-title">Title of blog</p>
                     <a class="container__content-title-btn">New</a>
                   </div>
-                  <a href="#" class="container__content-more">See more</a>
+                  <a href="" class="container__content-more">See more</a>
                 </div>
               </div>
               <div class="container__content-group">
@@ -204,7 +205,7 @@
                 </div>
                 <div class="container__content-group-title-more">
                   <p class="container__content-title">Title of blog</p>
-                  <a href="#" class="container__content-more">See more</a>
+                  <a href="" class="container__content-more">See more</a>
                 </div>
               </div>
               <div class="container__content-group">
@@ -217,7 +218,7 @@
                 </div>
                 <div class="container__content-group-title-more">
                   <p class="container__content-title">Title of blog</p>
-                  <a href="#" class="container__content-more">See more</a>
+                  <a href="" class="container__content-more">See more</a>
                 </div>
               </div>
             </div>
@@ -226,39 +227,4 @@
       </div>
     </div>
   </body>
-  <script>
-    {
-      let activeClass = document.querySelectorAll(".header__about-text a");
-      activeClass.forEach((text) => {
-        text.onclick = () => {
-          activeClass.forEach((t) => {
-            t.classList.remove("active");
-          });
-          text.classList.add("active");
-        };
-      });
-    }
-    {
-      let activeClass = document.querySelectorAll(".nav__category-opt");
-      activeClass.forEach((text) => {
-        text.onclick = () => {
-          activeClass.forEach((t) => {
-            t.classList.remove("active-btn");
-          });
-          text.classList.add("active-btn");
-        };
-      });
-    }
-    {
-      let activeClass = document.querySelectorAll(".nav__icon");
-      activeClass.forEach((text) => {
-        text.onclick = () => {
-          activeClass.forEach((t) => {
-            t.classList.remove("active-icon");
-          });
-          text.classList.add("active-icon");
-        };
-      });
-    }
-  </script>
 </html>
